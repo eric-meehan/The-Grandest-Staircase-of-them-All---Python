@@ -5,6 +5,8 @@ Eric Meehan
 The Grandest Staircase of them All
 """
 
+import sys
+
 def GenerateMatrix(n):
     # Generates a matrix with n columns and n + 1 rows and initializes the cells
     return [[1 if column >= row else 0 for column in range(n)] for row in range(n+1)]
@@ -20,8 +22,17 @@ def CalculatePartitions(m, n):
     return m
         
 def main():
+    # The user may specify n through command line arguments
+    if len(sys.argv) > 1:
+        try:
+            n = int(sys.argv[1])
+        except:
+            print("Invalid input, using the default argument 200")
+            n = 200
+    # Alternatively, the default argument of 200 will be used
+    else:
+        n = 200
     # This problem is essentially Euler's distinct partition problem, which can be solved using a matrix.
-    n = 200
     m = GenerateMatrix(n)
     # Calculate the partitions
     m = CalculatePartitions(m, n)
