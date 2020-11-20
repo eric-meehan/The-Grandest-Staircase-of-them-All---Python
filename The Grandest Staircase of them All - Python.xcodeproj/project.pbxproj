@@ -6,10 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		0714DAE925685A44007B4068 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0714DAE825685A44007B4068 /* main.cpp */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		0714DAE325685A44007B4068 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -24,7 +20,8 @@
 
 /* Begin PBXFileReference section */
 		0714DAE525685A44007B4068 /* The Grandest Staircase of them All - Python */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "The Grandest Staircase of them All - Python"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0714DAE825685A44007B4068 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0714DAF125685AA6007B4068 /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		0714DAF225685AB0007B4068 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +54,8 @@
 		0714DAE725685A44007B4068 /* The Grandest Staircase of them All - Python */ = {
 			isa = PBXGroup;
 			children = (
-				0714DAE825685A44007B4068 /* main.cpp */,
+				0714DAF125685AA6007B4068 /* main.py */,
+				0714DAF225685AB0007B4068 /* README.md */,
 			);
 			path = "The Grandest Staircase of them All - Python";
 			sourceTree = "<group>";
@@ -118,7 +116,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0714DAE925685A44007B4068 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
